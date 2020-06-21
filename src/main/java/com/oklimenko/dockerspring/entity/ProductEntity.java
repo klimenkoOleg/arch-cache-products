@@ -32,8 +32,7 @@ public class ProductEntity implements Serializable {
 //            sequenceName = "user_seq",
 //            allocationSize = 1)
     private Integer id;
-    private String firstName;
-    private String lastName;
+    private String productName;
     private String position;
-    private String department;
+    private String storeDepartment;
 }

@@ -12,9 +12,8 @@ import java.util.List;
 @Repository
 public interface ProductRepository extends JpaRepository<ProductEntity, Integer> {
 
-    @Query ("select p from ProductEntity p where p.firstName like %:criteriaString% or " +
-            " p.lastName  like %:criteriaString% or " +
+    @Query ("select p from ProductEntity p where p.productName like %:criteriaString% or " +
             " p.position  like %:criteriaString% or " +
-            " p.department like %:criteriaString% ")
+            " p.storeDepartment like %:criteriaString% ")
     List<ProductEntity> findByStringCriteria(@Param("criteriaString") String criteriaString);
 }
