@@ -21,7 +21,7 @@ spring:
           show_sql: true
           format_sql: true
     flyway:
-      enabled: false
+      enabled: true
 #      schemas: user_domain
 #      url: jdbc:postgresql://localhost:5432/postgres
 #      user: ${DATABASE_USER}

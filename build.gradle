@@ -30,6 +30,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     implementation "org.projectlombok:lombok:${lombokVersion}"
 
+    // to read init DB data
+    implementation 'com.opencsv:opencsv:3.8'
+
     //mapstruct
     implementation "org.mapstruct:mapstruct-jdk8:${mapstructVersion}"
     compileOnly "org.mapstruct:mapstruct-processor:${mapstructVersion}"
@@ -37,7 +40,7 @@ dependencies {
 
     //database
     implementation "org.postgresql:postgresql:${postgresqlVersion}"
-//    implementation "org.flywaydb:flyway-core:${flywayVersion}"
+    implementation "org.flywaydb:flyway-core:${flywayVersion}"
 
     //	testing
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
